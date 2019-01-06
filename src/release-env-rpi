@@ -1,0 +1,1 @@
+export RELEASE_TOOLPREFIX=$HOME/pi-toolchain/tools/arm-bcm2708/arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
