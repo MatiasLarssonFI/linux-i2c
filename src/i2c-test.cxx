@@ -51,7 +51,7 @@ int main(int argc, char* argv[]) {
         std::cout << "> ";
         std::getline(std::cin, input);
         uData = std::stoul(input);
-        std::cerr << "Writing " << uData << " to 0x" << std::hex << (unsigned)addr << std::endl;
+        std::cerr << std::hex << "Writing 0x" << uData << " to 0x" << (unsigned)addr << std::endl;
         if (i2c_smbus_write_byte_data(file, 0x01, uData) != 0) {
             perror("i2c_smbus_write_byte_data");
         }
